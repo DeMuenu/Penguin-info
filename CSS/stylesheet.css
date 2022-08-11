@@ -1,12 +1,110 @@
-body {
-  background-color: greenyellow;
+.sitenav li{
+  list-style: none;
+  display: block;
+  float: left;
+  padding-right: 20px;
+  font-weight: bold;
 }
-.container { background-color: lightgray;
-padding: 15px; border: 3px solid black;
-margin-bottom: 15px; margin: 1%; box-sizing: border-box;}
+.sitenav li a{
+  color:rgb(10, 107, 235);
+  text-decoration: none;
+}
+.sitenav a:hover {
+  background-color: #38b893;
+  font-weight: bolder;
+  font-size: 130%;
+}
 
-.favorites { background-color:orange; padding: 10px; width: 200px; box-sizing: border-box;}
+/*
+ * Homepage Styles
+ 
+ */
+body {
+  background-color: #5fface;
+}
+.container { background-color: rgb(224, 138, 26);
+border: 1px solid black;
+margin: 0.5%; box-sizing: border-box; padding: 2%; height: auto}
 
-.signature.textarea {
-  max-width: 160px;
+
+.contentarea { border-top: 3px solid black; border-bottom: 3px solid black; padding: 2%;}
+
+.container header {
+  text-align: center;
+  color: rgb(66, 29, 230);
+  font-size: 150%;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.maintext {
+
+width: 66%;
+float: left;
+height: auto;
+
+}
+.sideinfo {
+
+  background-color: #38b893;
+  width: 33%;
+  float: right;
+  border: 3px black solid;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+#sidephoto {
+  float: right;
+  width: 33%;
+  height: auto;
+  background-image: url(/Bilder/penguin-157887.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+h3 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 140%;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}
+p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 140%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 100%;
+  font-weight: normal;
+  margin-top: 20px;
+  padding: 0;
 }
