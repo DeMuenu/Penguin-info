@@ -1,0 +1,12 @@
+body {
+  background-color: greenyellow;
+}
+.container { background-color: lightgray;
+padding: 15px; border: 3px solid black;
+margin-bottom: 15px; margin: 1%; box-sizing: border-box;}
+
+.favorites { background-color:orange; padding: 10px; width: 200px; box-sizing: border-box;}
+
+.signature.textarea {
+  max-width: 160px;
+}
