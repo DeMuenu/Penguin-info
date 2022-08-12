@@ -22,7 +22,7 @@
 body {
   background-color: #5fface;
 }
-.container { background-color: rgb(224, 138, 26);
+.container { background-color: rgb(255, 255, 255);
 border: 1px solid black;
 margin: 0.5%; box-sizing: border-box; padding: 2%; height: auto}
 
@@ -46,6 +46,12 @@ float: left;
 height: auto;
 
 }
+/* Login */
+.login { float: right; width: 33%; margin-bottom: 20px; background-color: lightgray; box-sizing: border-box; padding: 20px;}
+.login input[id="name-input"] { width: 60%; display: block; box-sizing: border-box;}
+.login input[id="password-input"] { width: 60%; display: block; box-sizing: border-box;}
+
+/* login end*/
 .sideinfo {
 
   background-color: #38b893;
@@ -57,14 +63,16 @@ height: auto;
 
 }
 
-#sidephoto {
+.side-photo {
   float: right;
-  width: 33%;
-  height: auto;
-  background-image: url(/Bilder/penguin-157887.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+ margin-top: 40px;
+}
+.side-photo img{
+
+ width: 300px;
+ height: auto;
+ box-sizing: border-box;
+
 }
 
 
