@@ -1,3 +1,4 @@
+.sitenav {height: 30px;}
 .sitenav li{
   list-style: none;
   display: block;
@@ -50,6 +51,7 @@ height: auto;
 .login { float: right; width: 33%; margin-bottom: 20px; background-color: lightgray; box-sizing: border-box; padding: 20px;}
 .login input[id="name-input"] { width: 60%; display: block; box-sizing: border-box;}
 .login input[id="password-input"] { width: 60%; display: block; box-sizing: border-box;}
+.login input {margin-bottom: 5px;}
 
 /* login end*/
 .sideinfo {
