@@ -1,22 +1,22 @@
-/* Login */
-.login-box {
-  width: 30%;
-  height: auto;
-  background-color: #a5a5a5;
-  margin-bottom: 100px;
+body {
+  margin: 0;
 }
-.form-row {
-  padding: 10px 10px;
-  display: flex;
+.Title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: lightgray;
+  
 }
-.form-row label {
- padding-right: 10px;
-}
+.Title h1 {
+  text-align: center;
+  font-size: 3em;
+  color: black;
 
-.form-row input {
-  flex: 1;
-} 
-/* Login End*/
+}
+/* Title End*/
 
 /* Main Text */
 
@@ -32,58 +32,131 @@
   order: 2;
 }
 
+
 .sidebar-one {
   flex: 1;
   padding: 10px;
-
+  padding-top: 50px;
   order: 1;
+  transition-property: flex;
+  transition-duration: 1s;
+}
+.sidebar-one:hover {
+  flex: 10;
 }
 
 .sidebar-two {
   flex: 1;
   order: 3;
+  padding-top: 50px;
+  transition-property: flex;
+  transition-duration: 1s;
 
+}
+.sidebar-two:hover {
+  flex: 10;
+
+}
+@media (max-width: 800px) {
+  .colum-layout{
+    flex-wrap: wrap;
+  }
+  .sidebar-two {
+  visibility: hidden;
+  display: none;
+  width: 0;
+  height: 0;
+  flex: 0;
+  order: 1;
+}
+.sidebar-one{
+order: 3;
+background-color: lightgrey;
+
+}
 }
 /* Features */
 .features {
 
   padding: 10px;
-
+  margin-bottom: 100px;
 }
 .feature1 {
   flex: 1;
   background-color: #fd3f3f;
   order: 1;
-
+  margin-bottom: 20px;
   padding: 10px;
+  transition-property: transform;
+  transition-duration: 1s;
+  transform-origin: 0 50%;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .feature1:hover {
+  transform: scale(125%);
+  z-index: 2;
+}
+
 }
 .feature2 {
   flex: 1;
   background-color: #63fce2;
   order: 1;
-
+  margin-bottom: 20px;
   padding: 10px;
+  transition-property: transform;
+  transition-duration: 1s;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .feature2:hover {
+    transform: scale(125%);
+    z-index: 2;
+
+}
 }
 .feature3 {
   flex: 1;
   background-color: #a0f340;
   order: 1;
   padding: 10px;
+  transition-property: transform;
+  transition-duration: 1s;
+  transform-origin: 100% 50%;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .feature3:hover {
+    transform: scale(125%);
+    z-index: 2;
+  }
+
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .features{
     display: flex;
   }
   .feature1 {
     margin-right: 20px;
+    margin-bottom: 0px;
   }
   .feature2 {
     margin-right: 20px;
+    margin-bottom: 0px;
   }
 
 }
-
+/* little Pictures*/
+  .mini-pictures { 
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .pic1 {width: 124px; height: 124px; margin: 10px;}
 
 /*Just there*/
 .group:before,
